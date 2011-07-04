@@ -12,6 +12,7 @@ gem 'json'
 gem 'sass'
 gem 'coffee-script'
 gem 'uglifier'
+gem 'haml-rails'
 
 gem 'jquery-rails'
 

@@ -1,8 +1,9 @@
 RackCacheTest::Application.routes.draw do
 
   resource :test, :controller => 'test'
+  resource :presentation, :controller => 'presentation'
 
-  root :to => "test#show"
+  root :to => "presentation#show"
 
 
   # The priority is based upon order of creation:
