@@ -221,3 +221,27 @@
 
         expires_in nil, 's-maxage' => 10.seconds,  :public => true
 
+
+.slide
+  :markdown
+    # А насколько вообще нужен этот кэш?
+
+        > ab -c100 -n500 -i http://rack-cache-test.heroku.com/test
+
+        Requests per second:    7.62 [#/sec] (mean)
+        Time per request:       13119.061 [ms] (mean)
+        Time per request:       131.191 [ms] (mean, across all concurrent requests)
+
+    vs
+
+
+        > ab -c100 -n500 -i http://rack-cache-test.heroku.com/test
+
+        Requests per second:    81.44 [#/sec] (mean)
+        Time per request:       1227.823 [ms] (mean)
+        Time per request:       12.278 [ms] (mean, across all concurrent requests)
+
+
+.slide
+
+  %p{:style => "margin: 24% 0; text-align: center"} Спасибо
