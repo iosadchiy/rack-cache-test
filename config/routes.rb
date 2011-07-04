@@ -1,4 +1,10 @@
 RackCacheTest::Application.routes.draw do
+
+  resource :test, :controller => 'test'
+
+  root :to => "test#show"
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

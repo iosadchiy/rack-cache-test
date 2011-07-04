@@ -26,3 +26,4 @@ gem 'jquery-rails'
 
 
 gem 'rack-cache'
+gem 'faker'
