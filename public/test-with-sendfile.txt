@@ -1,0 +1,51 @@
+> ab -c100 -n500 http://rack-cache-test.heroku.com/test
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking rack-cache-test.heroku.com (be patient)
+Completed 100 requests
+Completed 200 requests
+Completed 300 requests
+Completed 400 requests
+Completed 500 requests
+Finished 500 requests
+
+
+Server Software:        nginx/0.7.67
+Server Hostname:        rack-cache-test.heroku.com
+Server Port:            80
+
+Document Path:          /test
+Document Length:        89852 bytes
+
+Concurrency Level:      100
+Time taken for tests:   49.986 seconds
+Complete requests:      500
+Failed requests:        352
+   (Connect: 0, Receive: 0, Length: 352, Exceptions: 0)
+Write errors:           0
+Total transferred:      45131643 bytes
+HTML transferred:       44921362 bytes
+Requests per second:    10.00 [#/sec] (mean)
+Time per request:       9997.263 [ms] (mean)
+Time per request:       99.973 [ms] (mean, across all concurrent requests)
+Transfer rate:          881.72 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:      161 1835 3726.0    170   21218
+Processing:  1037 7467 3108.3   7304   35737
+Waiting:      176  401 883.0    199   15341
+Total:       1204 9301 4979.0   8356   38913
+
+Percentage of the requests served within a certain time (ms)
+  50%   8356
+  66%   9652
+  75%  10604
+  80%  11186
+  90%  14503
+  95%  17029
+  98%  28363
+  99%  31123
+ 100%  38913 (longest request)
