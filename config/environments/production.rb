@@ -2,14 +2,14 @@ RackCacheTest::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
 
   # Code is not reloaded between requests
-  config.cache_classes = true
+  config.cache_classes = false
 
   # Full error reports are disabled and caching is turned on
   config.consider_all_requests_local       = false
   config.action_controller.perform_caching = true
 
   # Disable Rails's static asset server (Apache or nginx will already do this)
-  config.serve_static_assets = false
+  config.serve_static_assets = true
 
   # Compress both stylesheets and JavaScripts
   config.assets.js_compressor  = :uglifier
@@ -54,4 +54,8 @@ RackCacheTest::Application.configure do
 
   config.middleware.delete(Rack::Cache)
   config.middleware.insert_after Rack::Sendfile, Rack::Cache
+
+  config.middleware.insert_before Rack::Cache, Rack::ResponseHeaders do |headers|
+    headers.delete('Cache-Control')
+  end
 end
