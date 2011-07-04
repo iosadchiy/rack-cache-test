@@ -52,11 +52,11 @@ RackCacheTest::Application.configure do
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
 
-  # config.middleware.delete(Rack::Cache)
-  # config.middleware.insert_after Rack::Sendfile, Rack::Cache
+  config.middleware.delete(Rack::Cache)
+  config.middleware.insert_after Rack::Sendfile, Rack::Cache
 
   # disable all other caches but rack-cache
   config.middleware.insert_before Rack::Cache, Rack::ResponseHeaders do |headers|
-    # headers['Cache-Control'] = 'no-cache'
+    headers['Cache-Control'] = 'no-cache'
   end
 end
