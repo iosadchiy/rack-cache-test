@@ -33,3 +33,6 @@ gem 'mongrel'
 gem 'rack-contrib', :require => 'rack/contrib'
 gem 'therubyracer', :git => "https://github.com/cowboyd/therubyracer.git"
 gem 'pg'
+
+
+gem 'heroku_san', :group => :development
