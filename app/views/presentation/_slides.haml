@@ -1,26 +1,29 @@
 .slide
-  %h1 Being nice with Rack::Cache
+  %h1 Rack::Cache
+  %h2 One gotcha... two gotcha...
 
 
 .slide
-  %h1 HTTP кэширование: когда это нужно
+  %h1 Зачем?
 
   %ul
     %li slashdot
     %li load times
-    %li счет за трафик
+    %li счет за трафик и ресурсы
     %li счастливые пользователи
 
 
 .slide
-  %h1 HTTP кэширование: когда это нужно
+  :markdown
+    # HTTP кэширование
 
-  %ul
-    %li выгода
-    %li сложность
+    * выгода: значительна
+    * сложность: минимальна
 
-  %p
-    %em отношение выгода / сложность для HTTP кэша весьма велико
+    _отношение выгода / сложность для HTTP кэша весьма велико_
+
+    * больше 20 лет
+
 
 
 .slide
@@ -224,6 +227,17 @@
 
 .slide
   :markdown
+    # Кстати
+
+    Если вспомнить проблему с файлами, отдаваемыми через рельсы
+
+        expires_in 1.year, 's-maxage' => 0,  :public => true
+
+    Решает почти все наши проблемы (пока нет дополнительных прокси)
+
+
+.slide
+  :markdown
     # А насколько вообще нужен этот кэш?
 
         > ab -c100 -n500 -i http://rack-cache-test.heroku.com/test
@@ -240,6 +254,16 @@
         Requests per second:    81.44 [#/sec] (mean)
         Time per request:       1227.823 [ms] (mean)
         Time per request:       12.278 [ms] (mean, across all concurrent requests)
+
+
+.slide
+  :markdown
+    # Итого
+
+    * Rack::Cache - это очень просто, но думать все же надо
+    * в связке с Rack::Sendfile разгружает рельсы, в т.ч. на больших динамических страницах
+    * для entitystore лучше использовать Filestore, для metastore - Memory или memcache
+    * имеет смысл начинать именно с http-кэша
 
 
 .slide
