@@ -17,38 +17,38 @@ Server Hostname:        rack-cache-test.heroku.com
 Server Port:            80
 
 Document Path:          /test
-Document Length:        89852 bytes
+Document Length:        88584 bytes
 
 Concurrency Level:      100
-Time taken for tests:   49.986 seconds
+Time taken for tests:   55.497 seconds
 Complete requests:      500
-Failed requests:        352
-   (Connect: 0, Receive: 0, Length: 352, Exceptions: 0)
+Failed requests:        364
+   (Connect: 0, Receive: 0, Length: 364, Exceptions: 0)
 Write errors:           0
-Total transferred:      45131643 bytes
-HTML transferred:       44921362 bytes
-Requests per second:    10.00 [#/sec] (mean)
-Time per request:       9997.263 [ms] (mean)
-Time per request:       99.973 [ms] (mean, across all concurrent requests)
-Transfer rate:          881.72 [Kbytes/sec] received
+Total transferred:      44832238 bytes
+HTML transferred:       44621972 bytes
+Requests per second:    9.01 [#/sec] (mean)
+Time per request:       11099.466 [ms] (mean)
+Time per request:       110.995 [ms] (mean, across all concurrent requests)
+Transfer rate:          788.89 [Kbytes/sec] received
 
 Connection Times (ms)
               min  mean[+/-sd] median   max
-Connect:      161 1835 3726.0    170   21218
-Processing:  1037 7467 3108.3   7304   35737
-Waiting:      176  401 883.0    199   15341
-Total:       1204 9301 4979.0   8356   38913
+Connect:      159 1735 4312.4    168   24939
+Processing:  1160 6086 2710.9   5940   31111
+Waiting:      168  358 553.1    193    8097
+Total:       1319 7821 5261.0   6826   44053
 
 Percentage of the requests served within a certain time (ms)
-  50%   8356
-  66%   9652
-  75%  10604
-  80%  11186
-  90%  14503
-  95%  17029
-  98%  28363
-  99%  31123
- 100%  38913 (longest request)
+  50%   6826
+  66%   7772
+  75%   8573
+  80%   9274
+  90%  11917
+  95%  16466
+  98%  28401
+  99%  29136
+ 100%  44053 (longest request)
 
 
 
@@ -71,38 +71,38 @@ Server Hostname:        rack-cache-test.heroku.com
 Server Port:            80
 
 Document Path:          /test
-Document Length:        89632 bytes
+Document Length:        90084 bytes
 
 Concurrency Level:      100
-Time taken for tests:   50.742 seconds
+Time taken for tests:   58.979 seconds
 Complete requests:      500
-Failed requests:        360
-   (Connect: 0, Receive: 0, Length: 360, Exceptions: 0)
+Failed requests:        379
+   (Connect: 0, Receive: 0, Length: 379, Exceptions: 0)
 Write errors:           0
-Total transferred:      44949212 bytes
-HTML transferred:       44738870 bytes
-Requests per second:    9.85 [#/sec] (mean)
-Time per request:       10148.419 [ms] (mean)
-Time per request:       101.484 [ms] (mean, across all concurrent requests)
-Transfer rate:          865.07 [Kbytes/sec] received
+Total transferred:      45058649 bytes
+HTML transferred:       44848303 bytes
+Requests per second:    8.48 [#/sec] (mean)
+Time per request:       11795.820 [ms] (mean)
+Time per request:       117.958 [ms] (mean, across all concurrent requests)
+Transfer rate:          746.07 [Kbytes/sec] received
 
 Connection Times (ms)
               min  mean[+/-sd] median   max
-Connect:      159 1948 4678.6    169   24962
-Processing:  1041 6370 2484.2   6222   19733
-Waiting:      172  330 461.5    200    7584
-Total:       1206 8318 5623.1   6970   40964
+Connect:      159 3371 8999.2    170   49345
+Processing:  1046 7111 2760.0   6997   20979
+Waiting:      175  414 1162.3    201   17560
+Total:       1222 10482 9597.9   8134   54509
 
 Percentage of the requests served within a certain time (ms)
-  50%   6970
-  66%   8250
-  75%   9264
-  80%  10258
-  90%  13541
-  95%  19573
-  98%  29644
-  99%  30867
- 100%  40964 (longest request)
+  50%   8134
+  66%   9448
+  75%  10548
+  80%  11167
+  90%  16020
+  95%  30441
+  98%  52690
+  99%  54105
+ 100%  54509 (longest request)
 
 
 
@@ -124,35 +124,35 @@ Server Hostname:        rack-cache-test.heroku.com
 Server Port:            80
 
 Document Path:          /test
-Document Length:        89504 bytes
+Document Length:        89290 bytes
 
 Concurrency Level:      100
-Time taken for tests:   40.87356 seconds
+Time taken for tests:   38.767115 seconds
 Complete requests:      500
-Failed requests:        392
-   (Connect: 0, Length: 392, Exceptions: 0)
+Failed requests:        334
+   (Connect: 0, Length: 334, Exceptions: 0)
 Write errors:           0
-Total transferred:      45877620 bytes
-HTML transferred:       45661489 bytes
-Requests per second:    12.47 [#/sec] (mean)
-Time per request:       8017.471 [ms] (mean)
-Time per request:       80.175 [ms] (mean, across all concurrent requests)
-Transfer rate:          1117.61 [Kbytes/sec] received
+Total transferred:      45060704 bytes
+HTML transferred:       44847016 bytes
+Requests per second:    12.90 [#/sec] (mean)
+Time per request:       7753.423 [ms] (mean)
+Time per request:       77.534 [ms] (mean, across all concurrent requests)
+Transfer rate:          1135.09 [Kbytes/sec] received
 
 Connection Times (ms)
               min  mean[+/-sd] median   max
-Connect:       42  710 567.4    766    3437
-Processing:   323 6638 3452.1   5631   19176
-Waiting:       54  752 665.5    747    5151
-Total:        365 7348 3502.8   6618   19222
+Connect:       42  756 480.0    870    3990
+Processing:  2911 6450 2475.2   5725   27272
+Waiting:      166  788 318.9    824    3858
+Total:       2953 7207 2459.1   6635   28170
 
 Percentage of the requests served within a certain time (ms)
-  50%   6618
-  66%   6819
-  75%   8505
-  80%   9894
-  90%  12307
-  95%  15069
-  98%  17333
-  99%  18301
- 100%  19222 (longest request)
+  50%   6635
+  66%   6796
+  75%   6966
+  80%   7169
+  90%  11225
+  95%  12785
+  98%  14083
+  99%  14904
+ 100%  28170 (longest request)
