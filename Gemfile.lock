@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/cowboyd/therubyracer.git
+  revision: 12b58f3289de53618cb491648fef8ebe7f1b156a
+  specs:
+    therubyracer (0.9.2)
+      libv8 (~> 3.3.10)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -59,6 +66,7 @@ GEM
       railties (~> 3.0)
       thor (~> 0.14)
     json (1.5.3)
+    libv8 (3.3.10.2)
     mail (2.3.0)
       i18n (>= 0.4.0)
       mime-types (~> 1.16)
@@ -131,4 +139,5 @@ DEPENDENCIES
   rdiscount
   sass
   sqlite3
+  therubyracer!
   uglifier
