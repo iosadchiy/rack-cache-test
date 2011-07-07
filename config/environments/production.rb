@@ -57,6 +57,6 @@ RackCacheTest::Application.configure do
 
   # disable all other caches but rack-cache
   config.middleware.insert_before Rack::Cache, Rack::ResponseHeaders do |headers|
-    headers['Cache-Control'] = 'no-cache'
+    # headers['Cache-Control'] = 'no-cache'
   end
 end
